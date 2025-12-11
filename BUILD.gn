@@ -45,4 +45,7 @@ ohos_cargo_crate("lib") {
   build_root = "build.rs"
   build_sources = [ "build.rs" ]
   # deps += [ "//build/rust/clanglibs" ]
+  module_output_extension = ".rlib"
+  part_name = "rust_clang_sys"
+  subsystem_name = "thirdparty"
 }
